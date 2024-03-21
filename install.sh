@@ -9,8 +9,9 @@ if [[ "$(id -u)" -eq 0 ]]; then
 		# updata apt package manager
 		apt update
 		# install packages with -y to automate through installations
-		apt install -y\
-			nmap\
+		apt install -y \
+			nmap \
+	fi
 	else
 		echo "apt is not installed." 1>&2
 		exit 1
