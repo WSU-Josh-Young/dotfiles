@@ -10,8 +10,7 @@ if [[ "$(id -u)" -eq 0 ]]; then
 		apt update
 		# install packages with -y to automate through installations
 		apt install -y \
-			nmap \
-	fi
+			nmap
 	else
 		echo "apt is not installed." 1>&2
 		exit 1
