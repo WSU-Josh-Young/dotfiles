@@ -1,0 +1,9 @@
+[user]
+	email = young.599@wright.edu
+	name = WSU-Josh-Young
+[init]
+	defaultBranch = main
+[core]
+	editor = vim
+[commit]
+	template = /home/jyoung/.gitmessage.txt

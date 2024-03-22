@@ -1,0 +1,13 @@
+# connecting to fry.cs.wright.edu
+Host fry
+	HostName fry.cs.wright.edu
+	User w121pxw
+	Port 22
+	IdentityFile /home/jyoung/.ssh/id_ed25519
+	
+# internally connecting to home server
+Host 
+    IdentityFile /home/jyoung/.ssh/
+    HostName
+    User ubuntu
+    Port 22

@@ -36,12 +36,12 @@ if [[ "$(id -u)" -eq 0 ]]; then
 		if [[ -e $(ls Anaconda3*.sh 2> /dev/null | head -1) ]]; then
 			echo "Installer found, running it"
 		        bash Anaconda3-2024.02-1-Linux-x86_64.sh -b -p /home/$ME/anaconda3
-			echo "PATH=$PATH:/home/jyoung/anaconda3/bin" >> /home/$ME/.profile
+			echo "PATH=$PATH:/home/ubuntudesk/anaconda3/bin" >> /home/$ME/.profile
 	        else
 	 		echo "downloading anaconda"		
 			curl -O https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh
 			bash Anaconda3-2024.02-1-Linux-x86_64.sh -b -p /home/$ME/anaconda3
-			echo "PATH=$PATH:/home/jyoung/anaconda3/bin" >> /home/$ME/.profile
+			echo "PATH=$PATH:/home/ubuntudesk/anaconda3/bin" >> /home/$ME/.profile
 		fi
 	else
 		echo "apt is not installed."
@@ -66,10 +66,6 @@ if [[ "$(id -u)" -eq 0 ]]; then
 	# symbolic linking ssh files
 	ln -s /home/$ME/dotfiles/sshfiles/config /home/$ME/.ssh/config
 	ln -s /home/$ME/dotfiles/sshfiles/authorized_keys /home/$ME/.ssh/authorized_keys
-	# decided to make vim / Vundle it's own thing
-	#bash vundle-install.sh
-	#ln -s /home/$ME/dotfiles/vimrc /home/$ME/.vimrc
-	#vim +PluginInstall +qall	
 else
 	echo "Script is not running as root, exiting..." 1>&2
 	exit 1
