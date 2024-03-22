@@ -9,7 +9,7 @@ if [ -f ~/.vimrc ]; then
     mv ~/.vimrc ~/.vimrc.backup
 fi
 
-# Create symbolic link to your vimrc file
+# Create symbolic link to vimrc file
 ln -s ~/dotfiles/vimrc ~/.vimrc
 
 # Install plugins using Vundle
