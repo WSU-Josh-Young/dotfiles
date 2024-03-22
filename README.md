@@ -26,6 +26,7 @@
   - ssh public keys
 - config 
   - fry.cs.wright.edu
+  - AWS instance 
 ## gitfiles
 - gitconfig 
   - Added email, name, default main branch, vim editor, commit template.
