@@ -58,12 +58,12 @@ if [[ "$(id -u)" -eq 0 ]]; then
 		./awsdl/aws/install
 	fi 
 
-	# moving git files
+	# symbolic linking git files
 	ln -s /home/$ME/dotfiles/gitfiles/.gitconfig /home/$ME/.gitconfig
 	ln -s /home/$ME/dotfiles/gitfiles/.gitmessage.txt /home/$ME/.gitmessage.txt
-	# moving bashrc
+	# symbolic linking bashrc file
 	ln -s /home/$ME/dotfiles/bashrc /home/$ME/.bashrc
-	# moving ssh files
+	# symbolic linking ssh files
 	ln -s /home/$ME/dotfiles/sshfiles/config /home/$ME/.ssh/config
 	ln -s /home/$ME/dotfiles/sshfiles/authorized_keys /home/$ME/.ssh/authorized_keys
 	# decided to make vim / Vundle it's own thing
